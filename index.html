@@ -1,0 +1,149 @@
+<!-- 
+
+User Story #14: On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user.
+
+User Story #15: My Technical Documentation page should use at least one media query. 
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Documentação do Nicotine+</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Documentação do Nicotine+</header>
+        <a href="#Nicotine+" class="nav-link">Nicotine+</a>
+        <a href="#Download_Nicotine+" class="nav-link">Download Nicotine+</a>
+        <a href="#Envolva-se_com_o_Projeto" class="nav-link">Envolva-se com o Projeto</a>
+        <a href="#De_onde_veio_o_nome_Nicotine?" class="nav-link">De onde veio o nome Nicotine?</a>
+        <a href="#Jurídico_e_Privacidade" class="nav-link">Jurídico e Privacidade</a>
+        <a href="#Licença" class="nav-link">Licença</a>
+
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Nicotine+">
+            <header id="Nicotine+">Nicotine+</header>
+            <p>Nicotine+ é um cliente gráfico para a rede peer-to-peer Soulseek.</p>
+
+            <p>O Nicotine+ pretende ser uma alternativa agradável, gratuita e de código aberto (FOSS) ao cliente oficial Soulseek, fornecendo funcionalidades adicionais e mantendo-se atualizado com o protocolo Soulseek.</p> 
+                
+            <p>Nicotine+ usa GTK para sua interface gráfica de usuário e é escrito em Python.</p> 
+                
+        </section>
+        
+        <section class="main-section" id="Download_Nicotine+">
+            <header id="Download_Nicotine+">Download Nicotine+</header>
+            <p>A versão estável atual do Nicotine+ é 3.2.1, lançada em 10 de fevereiro de 2022. Veja as <a href="https://nicotine-plus.org/NEWS.html">notas de lançamento</a>.</p>
+
+            <p>Downloads estão disponíveis para</p>
+
+            <ul>
+                <li>GNU/Linux, *BSD e Solaris</li>
+                <li>Windows</li>
+                <li>macOS</li>
+            </ul>
+
+            <h1>GNU/Linux, *BSD, Solaris</h1>
+            <h2>Ubuntu/Debian</h2>
+            <p>Para usar pacotes estáveis no Ubuntu e no Debian, adicione o repositório PPA nicotine-team/stable executando o seguinte:</p>
+            <code>sudo apt install software-properties-common<br>
+                sudo add-apt-repository ppa:nicotine-team/stable<br>
+                sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 6CEB6050A30E5769<br>
+                sudo apt update<br>
+                sudo apt install nicotine
+            </code>
+            
+            <h2>Fedora</h2>
+            <p>Para instalar o Nicotine+ no Fedora, execute o seguinte:</p>
+            <code>sudo dnf install nicotine+</code>
+
+            <h2>Flatpak</h2>
+            <p>Se sua distribuição Linux suporta Flatpak, você pode instalar a versão estável atual do Nicotine+ do <a href="https://flathub.org/home">Flathub</a>.</p>
+
+            <h2>Arch Linux/Manjaro/Parabola</h2>
+            <p>Nicotine+ está disponível no repositório da comunidade do Arch Linux, Manjaro e Parabola. Para instalar, execute o seguinte:</p>
+            <code>sudo pacman -S nicotine+</code>
+
+            <h2>Void Linux</h2>
+            <p>Para instalar o Nicotine+ no Void Linux, execute o seguinte:</p>
+            <code>sudo xbps-install -S nicotine+</code>
+
+            <h2>FreeBSD</h2>
+            <p>Para instalar o Nicotine+ no FreeBSD, execute o seguinte:</p>
+            <code>pkg install py-nicotine-plus</code>
+
+            <h2>pip</h2>
+            <p>Se o Nicotine+ não estiver empacotado para o seu sistema, a versão estável atual pode ser instalada usando o pip. Certifique-se de que as dependências de tempo de execução estejam instaladas e execute o seguinte:</p>
+            <code>pip3 install nicotine-plus</code>
+            <p>Tenha em mente que o Nicotine+ não será atualizado automaticamente. Quando uma nova versão estiver disponível, execute o seguinte:</p>
+            <code>pip3 install --upgrade nicotine-plus</code>
+            
+            <h1>Windows</h1>
+            <p>Instaladores estáveis do Windows para Nicotine+ estão disponíveis para download. A instalação do Nicotine+ requer privilégios de administrador.</p>
+            <p>NOTA: O formato do instalador mudou desde o Nicotine+ 3.2.0. Se você estiver atualizando do Nicotine+ 3.1.1 ou anterior, desinstale o Nicotine+ primeiro (isso não removerá suas configurações existentes).</p>
+
+            <ul>
+                <li><a href="https://github.com/nicotine-plus/nicotine-plus/releases/latest/download/windows-x86_64-installer.zip">Download Nicotine+ 64-bit Windows Installer</a></li>
+                <li><a href="https://github.com/nicotine-plus/nicotine-plus/releases/latest/download/windows-i686-installer.zip">Download Nicotine+ 32-bit Windows Installer</a></li>
+            </ul>
+
+            <h1>macOS</h1>
+            <p>Um instalador estável do macOS para Nicotine+ está disponível no macOS versão 10.15 (Catalina) e mais recente.</p>
+            <ul>
+                <li><a href="https://github.com/nicotine-plus/nicotine-plus/releases/latest/download/macos-installer.zip">Download Nicotine+ macOS Installer</a></li>
+            </ul>
+
+        </section>
+
+        <section class="main-section" id="Envolva-se_com_o_Projeto">
+            <header id="Envolva-se_com_o_Projeto">Envolva-se com o Projeto</header>
+            <p>Se você sentir vontade de contribuir para o Nicotine+, existem várias maneiras de ajudar:</p>
+
+            <ul>
+                <li>Relate um problema ou sugira melhorias;</li>
+                    <li>discutindo suas descobertas no canal IRC do #nicotine+, no Libera.Chat; ou</li>
+                    <li>criando um novo <em>issue</em> no GitHub;</li>
+                <li>Instale a última versão instável e teste o Nicotine+;</li>
+                <li>Traduza o Nicotine+ para outro idioma com o Hosted Weblate;</li>
+                <li>Faça um pacote Nicotine+ para uma distribuição ou sistema operacional;</li>
+                <li>Implemente correções de bugs e recursos.</li>
+            </ul>
+
+        </section>
+
+        <section class="main-section" id="De_onde_veio_o_nome_Nicotine?">
+            <header id="De_onde_veio_o_nome_Nicotine?">De onde veio o nome Nicotine?</header>
+            <p>Eu estava com um humor nerd e estava navegando no QDB do http://www.bash.org.
+                Me deparei com esta citação:</p>
+                
+            <blockquote>
+                <p>tão tentador lançar um produto chamado 'nicotina' e esperar pelos patches. então eu teria um motivo para aplicar apenas um patch por dia. caso contrário, vou contra a orientação médica.</p>
+            </blockquote> 
+                
+                <p>Então eu pensei que diabos e sem rodeios roubei a ideia do etc.</p>
+        </section>
+
+        <section class="main-section" id="Jurídico_e_Privacidade">
+            <header id="Jurídico_e_Privacidade">Jurídico e Privacidade</header>
+            <p></p>
+            <ul>
+                <li>Ao se conectar ao servidor padrão do Soulseek, você concorda em cumprir as regras e os termos de serviço do Soulseek.</li>
+                <li>Nicotine+ não coleta nenhum dado do usuário. Políticas diferentes podem ser aplicadas ao servidor Soulseek padrão, que não é operado pela Equipe Nicotine+.</li>
+            </ul>
+        </section>
+
+        <section class="main-section" id="Licença">
+            <header id="Licença">Licença</header>
+            <p>Nicotine+ é lançado sob os termos da GNU Public License v3 ou posterior.</p>
+        </section>
+        
+    </main>
+
+</body>
+</html>
